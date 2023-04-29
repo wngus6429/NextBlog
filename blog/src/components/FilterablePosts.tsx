@@ -17,7 +17,7 @@ export default function FilterablePosts({ posts, categories }: Props) {
   return (
     <section className='flex m-4'>
       <PostsGrid posts={filtered} />
-      <Categories categories={[ALL_POSTS, ...categories]} selected={selected} onClick임={setSelected} />
+      <Categories categories={[ALL_POSTS, ...categories]} selected={selected} onClick={setSelected} />
     </section>
   );
 }
